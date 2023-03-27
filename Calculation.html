@@ -12,8 +12,27 @@
 <body>
 
     <div>
+        <label for="">From </label>
+        <select name="" id="from" onchange="">
+            <option value="Binary">Binary</option>
+            <option value="Decimal">Decimal</option>
+            <option value="Octal">Octal</option>
+            <option value="Hex">Hex</option>
+        </select>
+
+        <!-- <label for="">To</label>
+        <select name="" id="to">
+            <option value="Binary">Binary</option>
+            <option value="Decimal">Decimal</option>
+            <option value="Octal">Octal</option>
+            <option value="Hex">Hex</option>
+        </select> -->
+
+    </div>
+
+    <div>
         <label for="">Number</label>
-        <input type="text" id="input1">
+        <input type="number" id="input1">
 
         <select name="" id="select">
             <option value="+">+</option>
@@ -23,7 +42,7 @@
         </select>
 
         <label for="">Number2</label>
-        <input type="math">
+        <input type="number" id="input2">
 
         <button onclick="">SUBMIT</button>
     </div>
@@ -35,7 +54,7 @@
     </div>
 
     <script type="module" src="./js/app.js"></script>
-    <script type="module" src="js/helpers.js"></script>
+    <script type="module" src="./js/helpers.js"></script>
 </body>
 
 </html>
