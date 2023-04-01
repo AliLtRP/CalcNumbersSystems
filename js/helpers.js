@@ -121,12 +121,11 @@ fromData.item(0).addEventListener('change', () => {
 
 
 BtnResult.item(0).addEventListener('click', () => {
-
-    let i = 0;
-    while (i < 4) {
-        texArea.item(i).textContent = "dsf";
-        i++;
-    }
+    const inputData = document.getElementById('inputConv').value;
+    texArea.item(0).textContent = convBin(inputData, 10);
+    texArea.item(1).textContent = convDec(inputData, 10);
+    texArea.item(2).textContent = convHex(inputData, 10);
+    texArea.item(3).textContent = convOct(inputData, 10);
 });
 
 
@@ -138,4 +137,14 @@ function convBin(data, base){
     return parseInt(data, base).toString(2);
 }
 
-// console.log(convBin(10, 10));
+function convDec(data, base){
+    return parseInt(data, base).toString(10);
+}
+
+function convHex(data, base){
+    return parseInt(data, base).toString(16);
+}
+
+function convOct(data, base){
+    return parseInt(data, base).toString(8);
+}
