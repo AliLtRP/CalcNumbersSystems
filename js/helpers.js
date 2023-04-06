@@ -101,33 +101,25 @@ function dataCheck(sysNum) {
 
 // conversion
 
-let fromData = document.querySelectorAll('select');
 const BtnResult = document.querySelectorAll('button');
 const texArea = document.querySelectorAll('textarea');
-
-let firstSel = fromData.item(0).value;
-let firstSel1 = fromData.item(1).value;
-console.log(firstSel);
-console.log(firstSel1);
-
-fromData.item(0).addEventListener('change', () => {
-    let i = 0;
-    firstSel = fromData.item(0).value;
-    firstSel1 = fromData.item(1).value;
-
-    console.log(firstSel);
-    console.log(firstSel1);
-});
 
 
 BtnResult.item(0).addEventListener('click', () => {
     const inputData = document.getElementById('inputConv').value;
-    texArea.item(0).textContent = convBin(inputData, 10);
-    texArea.item(1).textContent = convDec(inputData, 10);
-    texArea.item(2).textContent = convHex(inputData, 10);
-    texArea.item(3).textContent = convOct(inputData, 10);
+    const optionVal = document.getElementById('selConv').value;
+    texArea.item(0).textContent = convBin(inputData, optionVal);
+    texArea.item(1).textContent = convDec(inputData, optionVal);
+    texArea.item(2).textContent = convHex(inputData, optionVal);
+    texArea.item(3).textContent = convOct(inputData, optionVal);
 });
 
+BtnResult.item(1).addEventListener('click', () => {
+    texArea.item(0).textContent = '';
+    texArea.item(1).textContent = '';
+    texArea.item(2).textContent = '';
+    texArea.item(3).textContent = '';
+});
 
 const resCon = (fromNum, toNum)=>{
 

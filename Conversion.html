@@ -21,27 +21,35 @@
             <option value="16">Hex</option>
         </select>
 
-        <label for="">To</label>
-        <select name="" id="">
-            <option value="10">Decimal</option>
-            <option value="8">Octal</option>
-            <option value="2">Binary</option>
-            <option value="16">Hex</option>
-        </select>
-
         <button>Result</button>
         <button>Clear</button>
     </div>
 
     <div>
+        <label for="">input</label>
         <input type="text" id="inputConv">
     </div>
 
     <div style="display: flex; flex-direction: column; width: 200px;">
-        <textarea name="" id="" cols="30" rows="1"></textarea>
-        <textarea name="" id="" cols="30" rows="1"></textarea>
-        <textarea name="" id="" cols="30" rows="1"></textarea>
-        <textarea name="" id="" cols="30" rows="1"></textarea>
+        <div class="binary">
+            <label for="">Binary</label>
+            <textarea name="" id="" cols="30" rows="1"></textarea>
+        </div>
+
+        <div class="decimal">
+            <label for="">Decimal</label>
+            <textarea name="" id="" cols="30" rows="1"></textarea>
+        </div>
+
+        <div class="hexa">
+            <label for="">Hex</label>
+            <textarea name="" id="" cols="30" rows="1"></textarea>
+        </div>
+
+        <div class="octal">
+            <label for="">Octal</label>
+            <textarea name="" id="" cols="30" rows="1"></textarea>
+        </div>
     </div>
 
     <script type="module" src="./js/appCon.js"></script>
