@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+body{
+    width: 100%;
+    height: auto;
+}
+
 #header {
     display: flex;
     background-color: black;
@@ -28,17 +33,14 @@ a{
     color: white;
 }
 
-
-#main{
-    width: 90vw;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: 1;
+main{
+    height: 83.7vh;
 }
 
-.from{
-    background-color: aqua;
-    width: 30vw;
+.content{
+    height: 70vh;
+}
+
+.footer{
+    height: 100px;
 }

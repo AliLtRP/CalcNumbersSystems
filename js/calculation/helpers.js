@@ -25,6 +25,7 @@ export const result = (data, data2, op, from) => {
             result = (data / data2).toString(base);
     };
 
+    console.log(result);
     return texrArea.textContent = result;
 };
 

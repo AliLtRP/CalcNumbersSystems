@@ -1,6 +1,6 @@
 import * as myFunc from "./helpers.js";
 
-const button = document.querySelector('button');
+const button = document.getElementById('but');
 let from = document.getElementById('from');
 
 // calc result
@@ -14,6 +14,9 @@ button.addEventListener('click', () => {
     myFunc.result(data, data2, op, from.value);
 });
 
+function onC(){
+    console.log("hello");
+}
 
 // validate that input is not text, unless it's hex
 
