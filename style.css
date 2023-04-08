@@ -37,3 +37,8 @@ a{
     align-items: center;
     flex-wrap: 1;
 }
+
+.from{
+    background-color: aqua;
+    width: 30vw;
+}
