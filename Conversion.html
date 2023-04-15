@@ -2,58 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>0011</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>OctalOpus</title>
 </head>
 
 <body>
+  <!-- navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">OctalOpus</a>
 
-    <!-- take on inp convert it to all number systems -->
-    <div>
-        <label for="">From</label>
-        <select name="" id="selConv">
-            <option value="2" selected="selected">Binary</option>
-            <option value="8">Octal</option>
-            <option value="10">Decimal</option>
-            <option value="16">Hex</option>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link text-light" href="https://github.com/AliLtRP" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- take on inp convert it to all number systems -->
+  <main class="container-sm w-50">
+    <div class="mx-5 bg-dark content">
+      <div class="mx-5 mb-3">
+        <label for="" class="text-light mt-3">Select Number System</label>
+        <select class="form-select mt-2" id="selConv" aria-label="Default select example">
+          <option value="2">Binary</option>
+          <option value="10">Decimal</option>
+          <option value="8">Octal</option>
+          <option value="16">Hex</option>
         </select>
+      </div>
 
-        <button>Result</button>
-        <button>Clear</button>
-    </div>
+      <!-- input field -->
+      <div class="mx-5">
+        <label for="" class="text-light">Number you want to convert</label>
+        <div class="input-group flex-nowrap mb-4 ">
+          <input type="number" id="inputConv" class="form-control" placeholder="Number" />
+        </div>
+      </div>
 
-    <div>
-        <label for="">input</label>
-        <input type="text" id="inputConv">
-    </div>
+      <!-- buttons -->
+      <div class="mx-5">
+        <button type="button" id="but" onclick="" class="btn btn-success mb-4">
+          Result
+        </button>
+        <button type="button" id="but1" onclick="" class="btn btn-success mb-4">
+          Clear
+        </button>
+      </div>
 
-    <div style="display: flex; flex-direction: column; width: 200px;">
+      <!--  -->
+
+      <div style="display: flex; flex-direction: column; " class="mx-5">
         <div class="binary">
-            <label for="">Binary</label>
-            <textarea name="" id="" cols="30" rows="1"></textarea>
+          <label for="" class="text-light my-2">Binary</label>
+          <textarea class="form-control" id="texrArea" rows="2" readonly></textarea>
         </div>
 
         <div class="decimal">
-            <label for="">Decimal</label>
-            <textarea name="" id="" cols="30" rows="1"></textarea>
+          <label for="" class="text-light my-2">Decimal</label>
+          <textarea class="form-control" id="texrArea" rows="2" readonly></textarea>
         </div>
 
         <div class="hexa">
-            <label for="">Hex</label>
-            <textarea name="" id="" cols="30" rows="1"></textarea>
+          <label for="" class="text-light my-2">Hex</label>
+          <textarea class="form-control" id="texrArea" rows="2" readonly></textarea>
         </div>
 
         <div class="octal">
-            <label for="">Octal</label>
-            <textarea name="" id="" cols="30" rows="1"></textarea>
+          <label for="" class="text-light my-2">Octal</label>
+          <textarea class="form-control" id="texrArea" rows="2" readonly></textarea>
         </div>
-    </div>
+      </div>
 
-    <script type="module" src="./js/conversion/app.js"></script>
-    <script type="module" src="./js/conversion/helpers.js"></script>
+    </div>
+  </main>
+
+  <footer class="footer bg-dark">
+
+  </footer>
+
+  <script type="module" src="./js/conversion/app.js"></script>
+  <script type="module" src="./js/conversion/helpers.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
